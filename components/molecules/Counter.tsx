@@ -15,24 +15,24 @@ const Counter: React.FC = () => {
                 </div>
                 <div className='flex items-center justify-center gap-10'>
                     <div className='relative flex items-center'>
-                        <select name="" id="" className='appearance-none py-2.5 px-1 block cursor-pointer text-[#207cf4] bg-transparent border-none text-lg'>
+                        <select name="" id="" defaultValue="Naira" className='appearance-none py-2.5 px-1 block cursor-pointer text-[#207cf4] bg-transparent border-none text-lg'>
                             <option value="NGN">Naira</option>
                             <option value="USD">Dollar</option>
                         </select>
                         <div className="text-[#207cf4] text-3xl"><RiArrowDropDownLine /></div>
                     </div>
                     <div className='relative flex items-center'>
-                        <select name="" id="" className='appearance-none py-2.5 px-1 block cursor-pointer text-[#207cf4] bg-transparent border-none text-lg'>
+                        <select name="" id="" defaultValue="Monthly"  className='appearance-none py-2.5 px-1 block cursor-pointer text-[#207cf4] bg-transparent border-none text-lg'>
                             <option value="onetime">Onetime</option>
                             <option value="weekly">Weekly</option>
-                            <option selected="selected" value="monthly">Monthly</option>
+                            <option value="monthly">Monthly</option>
                         </select>
                         <div className="text-[#207cf4] text-3xl"><RiArrowDropDownLine /></div>
                     </div>
                     <div className='relative flex items-center'>
-                        <select name="" id="" className='appearance-none py-2.5 px-1 block cursor-pointer text-[#207cf4] bg-transparent border-none text-lg'>
+                        <select name="" id="" defaultValue="3 years ago" className='appearance-none py-2.5 px-1 block cursor-pointer text-[#207cf4] bg-transparent border-none text-lg'>
                             <option value="12">Last year</option>
-                            <option selected="selected" value="36">3 years ago</option>
+                            <option value="36">3 years ago</option>
                             <option value="60">5 years ago</option>
                         </select>
                         <div className="text-[#207cf4] text-3xl"><RiArrowDropDownLine /></div>
