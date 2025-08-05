@@ -199,7 +199,7 @@ function Navbar() {
               )}
             ].map(({ key, label, content }) => (
               <li key={key} className="relative">
-                <button onClick={() => toggleDropdown(key)} className="flex items-center gap-1 text-[#6c82a3] font-bold hover:text-[#082552]">
+                <button onClick={() => toggleDropdown(key as DropdownKey)} className="flex items-center gap-1 text-[#6c82a3] font-bold hover:text-[#082552]">
                   {label} <RiArrowDropDownLine />
                 </button>
                 {openDropdown === key && (
@@ -257,7 +257,7 @@ function Navbar() {
                 isMobileMenuItemVisible(menu) ? (
                     <li key={menu} className="transition-all duration-300">
                     <button
-                        onClick={() => toggleMobileDropdown(menu)}
+                        onClick={() => toggleMobileDropdown(menu as DropdownKey)}
                         className="flex items-center font-bold text-3xl gap-2"
                     >
                         {menu.charAt(0).toUpperCase() + menu.slice(1)}
