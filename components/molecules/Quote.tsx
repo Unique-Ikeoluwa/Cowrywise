@@ -14,11 +14,7 @@ const Quote: React.FC = () => {
 
   const renderCards = () =>
     cards.map((text, index) => (
-      <a
-        key={index}
-        href="#"
-        className="flex justify-center items-center mr-8 p-8 border border-[#0066f5] font-bold rounded-3xl min-h-[320px] max-w-[480px] text-[#0066f5] text-5xl shrink-0"
-      >
+      <a key={index} href="#" className="flex justify-center items-center mr-8 p-8 border border-[#0066f5] font-bold rounded-3xl min-h-[320px] max-w-[480px] text-[#0066f5] text-5xl shrink-0">
         <h4>" <br />{text}</h4>
       </a>
     ));

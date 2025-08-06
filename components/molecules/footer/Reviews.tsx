@@ -1,18 +1,13 @@
-"use client";
-
-import React from "react";
+"use client"
+import React from 'react'
 import { GoStarFill } from "react-icons/go";
 import { IoMdStarHalf } from "react-icons/io";
 import { FaAngleRight } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa6";
-import { IoLogoFacebook, IoLogoWhatsapp, IoLogoInstagram } from "react-icons/io";
-import { FaTelegramPlane, FaYoutube } from "react-icons/fa";
 
-const Footer: React.FC = () => {
+function Reviews() {
   return (
-    <div className="mt-5 bg-no-repeat bg-auto pb-[50px] bg-[url('https://cowrywise.com/images/patterns/footer-bg.svg')] bg-[0px_1080px]">
-      <div className="mx-auto px-5 w-full max-w-[1380px]">
-        <div className="mt-5 mb-[100px] grid justify-center gap-x-10 grid-cols-2">
+    <>
+      <div className="mt-5 mb-[100px] grid justify-center gap-x-10 grid-cols-2">
           <div className="bg-white shadow py-8 px-9 border border-solid border-[#0825520d] w-full rounded-[20px] min-h-[300px]">
             <div className="flex flex-col gap-5">
               <div className="flex flex-row justify-between items-center">
@@ -49,108 +44,8 @@ const Footer: React.FC = () => {
             </div>
           </div>        
         </div>
-        <div className="rounded-xl bg-[#0066f5] shadow-2xl shadow-[#0067f54d] mb-10 py-20">
-          <div className="max-w-[1380px] mx-auto py-5 px-32 flex flex-row justify-between items-center flex-wrap">
-            <h3 className="text-white text-4xl font-semibold max-w-[600px]">
-              Join over 1 million customers on Cowrywise today
-            </h3>
-
-            <form action="https://cowrywise.com/choose-account" className="w-full sm:w-auto">
-              <div className="relative rounded-md py-2.5 px-6 bg-white/40 flex items-center">
-                <input
-                  type="email"
-                  className="text-white bg-transparent border-none h-[38px] focus:outline-none placeholder-white/70"
-                  placeholder="Your email..."
-                />
-                <button
-                  type="submit"
-                  className="-mr-4 text-[#082552] border-none py-3 px-5 rounded-lg font-bold bg-white whitespace-nowrap"
-                >
-                  Sign Up For Free
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div className="mt-[100px] mb-10 w-full flex flex-row justify-between">
-          <div>
-            <h3 className="font-semibold mb-[30px] text-xl text-[#082552]">Company</h3>
-            <ul className="text-[#08255299]">
-              <li className="mt-2">About Us</li>
-              <li className="mt-2">Press</li>
-              <li className="mt-2">Careers</li>
-              <li className="mt-2">Ambassadors</li>
-              <li className="mt-2">Complaints Management</li>
-              <li className="mt-2">Privacy</li>
-              <li className="mt-2">Terms</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-[30px] text-xl text-[#082552]">Product</h3>
-            <ul className="text-[#08255299]">
-              <li className="mt-2">Saving Plans</li>
-              <li className="mt-2">Investment Plans</li>
-              <li className="mt-2">Mutual Funds</li>
-              <li className="mt-2">Stacks</li>
-              <li className="mt-2">Duo</li>
-              <li className="mt-2">Embed API</li>
-              <li className="mt-2">Sprout</li>
-              <li className="mt-2">Circles</li>
-              <li className="mt-2">Halal</li>
-              <li className="mt-2">Got a suggestion?</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-[30px] text-xl text-[#082552]">Resources</h3>
-            <ul className="mt-2 text-[#08255299]">
-              <li className="mt-2">Customer Stories</li>
-              <li className="mt-2">Media</li>
-              <li className="mt-2">FAQs</li>
-              <li className="mt-2">Security</li>
-              <li className="mt-2">IMS Policy</li>
-              <li className="mt-2">Estimate your Interest</li>
-              <li className="mt-2">Plan Education</li>
-              <li className="mt-2">Engineering</li>
-              <li className="mt-2">Glossary</li>
-              <li className="mt-2">Simplified Publication</li>
-              <li className="mt-2">Blog</li>
-              <li className="mt-2">Help Center</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-[30px] text-xl text-[#082552]">Contact</h3>
-            <ul className="mt-2 text-[#08255299]">
-              <li className="mt-2">07000COWRYWISE</li>
-              <li className="mt-2">support@cowrywise.com</li>
-              <li className="mt-2">WhatsApp</li>
-            </ul>
-          </div>
-        </div>
-        <hr className="text-[#082552]/10" />
-        <div className="w-full text-lg text-[#08255299] py-10 flex flex-row items-center gap-3">
-          <a className="hover:text-[#0066f5]" href="#"><FaTwitter /></a><a className="hover:text-[#0066f5]" href="#"><IoLogoFacebook /></a><a className="hover:text-[#0066f5]" href="#"><IoLogoWhatsapp /></a><a className="hover:text-[#0066f5]" href="#"><FaTelegramPlane /></a><a className="hover:text-[#0066f5]" href="#"><IoLogoInstagram /></a><a className="hover:text-[#0066f5]" href="#"><FaYoutube /></a>
-        </div>
-        <div className="flex flex-row items-center py-5 justify-between">
-          <div className="flex flex-col gap-4">
-            <p className="text-lg text-[#082552]">🇳🇬   5C Reverend Ogunbiyi Street, Ikeja GRA, Lagos Nigeria.</p>
-            <p className="text-lg text-[#082552]">🇺🇸   2261 Market Street #4817 San Francisco, CA 94114</p>
-          </div>
-          <div className="bg-white py-2 px-3 border border-[#082552]/10 rounded shadow-sm flex gap-5">
-            <img src="https://cdn.cowrywise.com/images/license/sec.png" className="size-8" alt="" />
-            <div className="flex flex-col">
-              <span className="font-bold text-base">Licensed by the SEC </span><span className="text-sm text-[#08255299]">Fund Manager</span>
-            </div>
-          </div>
-        </div>
-        <p className="text-[#0825527a] py-3 text-sm">Cowrywise Financial Technology Limited (“Cowrywise”) is a Fund/Portfolio Manager duly licensed by the Securities and Exchange Commission (SEC) of Nigeria, with License #1940 and its sister company, CFTL Digital Services Limited, is a Digital Sub-Broker duly licensed by the SEC, with License #3005.</p>
-        <p className="text-[#0825527a] pb-3 text-sm">Our mutual funds are managed by our fund management partners and made available to our clients through our web and mobile applications. The fund manager for each mutual fund is disclosed on every mutual fund’s profile page. Any historical returns or expected returns are hypothetical in nature and may not reflect actual future performance. <a className="text-[#0066f5]" href="https://cowrywise.com/mutual-funds">View full list of available mutual funds on Cowrywise.</a></p>
-        <p className="text-[#0825527a] pb-3 text-sm">Stash is used for the purpose of receiving money transfers in place of a regular debit card. It also receives the proceeds from the sale of any mutual fund on Cowrywise.</p>
-        <p className="text-[#0825527a] pb-3 text-sm">The content on this website does not constitute a complete description of Cowrywise’s offerings and services. By using this website, you accept our <a className="text-[#0066f5]" href="https://cowrywise.com/terms">Terms of Use</a> and <a className="text-[#0066f5]" href="https://cowrywise.com/privacy">Privacy Policy.</a></p>
-        <p className="text-[#0825527a] pb-3 text-sm">Google Play and the Google Play logo are trademarks of Google LLC. Apple, the Apple logo, and iPhone are trademarks of Apple Inc. registered in the U.S.</p>
-        <p className="text-[#0825527a] pb-5 text-sm">©2025 Cowrywise Financial Technology. All rights reserved</p>
-      </div>
-    </div>
+    </>
   )
 }
 
-export default Footer
+export default Reviews

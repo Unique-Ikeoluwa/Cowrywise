@@ -43,34 +43,32 @@ const Counter: React.FC = () => {
                 <div className="relative w-3/5">
                     <div className="absolute left-0 right-0 top-1/2 h-[1px] bg-[#cbd5e1] -translate-y-1/2 z-0" />
                         <input style={{WebkitAppearance: "none", height: "1px", backgroundColor: "transparent",}} className="appearance-none outline-none border-none w-full overflow-visible bg-[#aeb9cc66] h-[1px]" type="range" min="5000" max="10000000" value="10000" step="1000"/>
-                    <style jsx>{`
-                        input[type='range']::-webkit-slider-thumb {
-                            -webkit-appearance: none;
-                            appearance: none;
-                            width: 28px;
-                            height: 28px;
-                            background: transparent;
-                            border-radius: 9999px;
-                            cursor: pointer;
-                            border: 2px solid white;
-                            margin-top: -13.5px;
-                            box-shadow: 0 0 0 4px rgba(0, 102, 245, 0.2);
-                            transition: background 0.3s;
-                        }
-
-                        input[type='range']::-moz-range-thumb {
-                            width: 28px;
-                            height: 28px;
-                            background: #0066f5;
-                            border-radius: 9999px;
-                            cursor: pointer;
-                            border: 2px solid white;
-                            box-shadow: 0 0 0 4px rgba(0, 102, 245, 0.2);
-                        }
-
-                        input[type='range']:focus::-webkit-slider-thumb {
-                            background: #0050c4;
-                        }
+                        <style jsx>{`
+                            input[type='range']::-webkit-slider-thumb {
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 28px;
+                                height: 28px;
+                                background: transparent;
+                                border-radius: 9999px;
+                                cursor: pointer;
+                                border: 2px solid white;
+                                margin-top: -13.5px;
+                                box-shadow: 0 0 0 4px rgba(0, 102, 245, 0.2);
+                                transition: background 0.3s;
+                            }
+                            input[type='range']::-moz-range-thumb {
+                                width: 28px;
+                                height: 28px;
+                                background: #0066f5;
+                                border-radius: 9999px;
+                                cursor: pointer;
+                                border: 2px solid white;
+                                box-shadow: 0 0 0 4px rgba(0, 102, 245, 0.2);
+                            }
+                            input[type='range']:focus::-webkit-slider-thumb {
+                                background: #0050c4;
+                            }
                         `}</style>
                     </div>
                 </div>
@@ -91,7 +89,6 @@ const Counter: React.FC = () => {
                         *In a bank you, you'd earn <span className="text-[#082552]">#28,000</span>
                     </p>
                 </div>
-                <div></div>
             </div>
             <p className="text-[#6c82a3] text-center max-w-[800px] text-sm mt-7 mx-auto font-normal">Calculations are based on the average performance of conservative mutual funds on Cowrywise from 2019. <br /> Calculation excludes processing fees.</p>
         </div>

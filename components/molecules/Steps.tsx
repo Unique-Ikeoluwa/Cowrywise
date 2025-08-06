@@ -71,10 +71,7 @@ const Steps: React.FC = () => {
               </div>
             </div>
 
-            <a
-              href="https://cowrywise.com/choose-account/"
-              className="mt-4 inline-block text-center bg-[#0066f5] text-white w-fit px-6 py-3 rounded-lg font-medium hover:bg-[#0050c4] transition duration-300"
-            >
+            <a href="https://cowrywise.com/choose-account/" className="mt-4 inline-block text-center bg-[#0066f5] text-white w-fit px-6 py-3 rounded-lg font-medium hover:bg-[#0050c4] transition duration-300">
               Sign up now
             </a>
           </div>
